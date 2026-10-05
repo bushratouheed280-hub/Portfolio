@@ -1,0 +1,18 @@
+Bushra Touheed
+Frontend Developer
+
+Skills: HTML5, CSS3, JavaScript, Bootstrap, jQuery, PHP, MySQL, Git, GitHub, WordPress, Elementor
+
+Experience:
+- Built responsive landing pages and portfolio-style web experiences
+- Focused on clean UI, accessibility, and modern frontend polish
+- Worked with static and dynamic web projects
+
+Education:
+- Intermediate in Computer Science
+- Diploma in Information Technology
+
+Contact:
+- Email: bushra@example.com
+- LinkedIn: linkedin.com/in/bushra-touheed
+- GitHub: github.com/bushratouheed280-hub

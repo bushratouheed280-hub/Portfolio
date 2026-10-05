@@ -3,239 +3,436 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Showcase Your Work</title>
+    <meta name="description" content="Bushra Touheed is a Frontend Developer crafting premium, responsive, and high-performing web experiences.">
+    <title>Bushra Touheed | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
-            <div class="nav-logo">Portfolio</div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="#home" class="nav-logo">Bushra<span>.</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <div class="home-text">
-                <h1 class="home-title">Hi, I'm <span class="highlight">Bushra</span></h1>
-                <p class="home-subtitle">Frontend Web Developer</p>
-                <p class="home-description">Welcome to my portfolio. I craft beautiful, responsive, and user-friendly web interfaces that bring ideas to life.</p>
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-            </div>
-            <div class="home-image">
-                <img src="https://img.freepik.com/premium-photo/programmer-woman-coding-computer-coder-girl_875825-104465.jpg?w=360" alt="Profile Picture" class="profile-image">
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate Frontend Web Developer with expertise in creating stunning, responsive, and interactive user interfaces. I specialize in turning design mockups into fully functional web applications using modern HTML, CSS, and JavaScript frameworks.</p>
-                    <p>My journey in frontend development has been driven by a passion for creating delightful user experiences and writing clean, maintainable code. I'm always learning the latest frontend technologies and best practices to deliver exceptional digital solutions.</p>
-                </div>
-                <div class="about-image">
-                    <img src="https://i.pinimg.com/1200x/1e/e6/54/1ee654f04d664cf6d985c4fd8996a38e.jpg" alt="About Me" class="placeholder-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Intermediate in Computer Science</h3>
-                        <p class="education-school">Degree College for women</p>
-                        <p class="education-year">2023 - 2025</p>
-                        <p class="education-description">I have completed Intermediate in Computer Science</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-ambient" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow">FRONTEND DEVELOPER</p>
+                    <h1>Building Modern &amp; Responsive Web Experiences</h1>
+                    <p class="hero-description">I build responsive, modern and user-focused websites using HTML, CSS, JavaScript, Bootstrap, WordPress and Elementor.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
+                    <div class="hero-pills" aria-label="Main technologies">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>WordPress</span>
+                        <span>Elementor</span>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Diploma in Information Technology</h3>
-                        <p class="education-school">Aptech Institute</p>
-                        <p class="education-year">2025</p>
-                        <p class="education-description">I am currently enrolled in a Diploma in (Inforamtion Technology)I am developing practical skills in IT and continously working on improving my knowledge in modern technologies.</p>
+
+                <div class="hero-visual" data-reveal>
+                    <div class="profile-card">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar">BT</div>
+                        <div class="floating-chip chip-one">HTML5</div>
+                        <div class="floating-chip chip-two">Bootstrap</div>
+                        <div class="floating-chip chip-three">JavaScript</div>
+                        <div class="floating-chip chip-four">WordPress</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <figure class="about-visual" data-reveal aria-labelledby="about-visual-caption">
+                        <div class="about-monogram" aria-hidden="true">BT</div>
+                        <figcaption id="about-visual-caption">
+                            <span>Bushra Touheed</span>
+                            <small>Frontend Developer</small>
+                        </figcaption>
+                    </figure>
 
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Ms Office</h3>
-                
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>HTML & CSS</h3>
-                
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>JavaScript & Frameworks</h3>
-                   
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Bootstrap</h3>
-                    
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Jquery</h3>
-                   
-                </div>
+                    <div class="about-content" data-reveal>
+                        <div class="section-heading about-heading">
+                            <h2>About Me</h2>
+                        </div>
+                        <div class="about-intro">
+                            <p>I'm a Frontend Developer focused on building responsive, modern and user-friendly websites. I work with HTML, CSS, JavaScript, Bootstrap, WordPress and Elementor, and I enjoy turning ideas into functional and visually polished web experiences.</p>
+                            <p>I regularly build and practice real-world projects to strengthen my frontend development skills, improve my UI implementation, and explore better ways to create responsive websites.</p>
+                        </div>
 
-                 <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>SEO</h3>
-                   
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-content">
-                        <h3>Simplon's Beauty Care</h3>
-                        <p>A responsive beauty care website showcasing various beauty products and services, built with HTML, CSS, and JavaScript.</p>
-                        
-                        <div class="project-links">
-                            <a href="https://bushratouheed280-hub.github.io/Beauty-care/" class="project-link">Live Demo</a>
-                            <a href="https://github.com/bushratouheed280-hub/Beauty-care.git" class="project-link">Source Code</a>
+                        <div class="core-focus" aria-labelledby="core-focus-heading">
+                            <h3 id="core-focus-heading">Core Focus</h3>
+                            <div class="core-focus-grid">
+                                <article class="core-focus-item">
+                                    <h4>Responsive Web Development</h4>
+                                    <p>Building layouts that work smoothly across desktop, tablet and mobile.</p>
+                                </article>
+                                <article class="core-focus-item">
+                                    <h4>Modern UI Implementation</h4>
+                                    <p>Turning designs and ideas into clean, interactive web interfaces.</p>
+                                </article>
+                                <article class="core-focus-item">
+                                    <h4>WordPress &amp; Elementor</h4>
+                                    <p>Creating and customizing websites using WordPress, Elementor and custom code.</p>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="project-card">
-                    <div class="project-image2"></div>
-                    <div class="project-content">
-                        <h3>Coffee</h3>
-                        <p>A stylish coffee shop website featuring menu items, about section, and contact information, built with HTML, CSS, and JavaScript.</p>
-                       
-                        <div class="project-links">
-                            <a href="https://bushratouheed280-hub.github.io/COFee/" class="project-link">Live Demo</a>
-                            <a href="https://github.com/bushratouheed280-hub/COFee.git" class="project-link">Source Code</a>
+        <section id="what-i-do" class="section what-i-do" aria-labelledby="what-i-do-heading">
+            <div class="container">
+                <div class="section-heading services-heading" data-reveal>
+                    <h2 id="what-i-do-heading">What I Do</h2>
+                    <p class="section-subtitle">I build responsive and modern web experiences with a focus on clean design, usability and performance.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card" data-reveal>
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Building responsive and interactive websites using HTML, CSS and JavaScript with clean, maintainable code.</p>
+                        <ul class="service-tags" aria-label="Technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" data-reveal>
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" focusable="false"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 21h8m-4-4v4M7 8h10M7 11h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3>Responsive UI Design</h3>
+                        <p>Creating clean, user-friendly layouts that adapt smoothly across desktops, tablets and mobile devices.</p>
+                        <ul class="service-tags" aria-label="Design approach">
+                            <li>Responsive</li>
+                            <li>UI</li>
+                            <li>Mobile First</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" data-reveal>
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 9h18M8 9v11m5-7h4m-4 4h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="6" cy="6.5" r=".6" fill="currentColor"/></svg>
+                        </div>
+                        <h3>WordPress &amp; Elementor</h3>
+                        <p>Creating and customizing modern WordPress websites using Elementor, custom CSS and frontend techniques.</p>
+                        <ul class="service-tags" aria-label="Technologies">
+                            <li>WordPress</li>
+                            <li>Elementor</li>
+                            <li>Custom CSS</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Academic journey</p>
+                    <h2>Education</h2>
+                    <p class="education-subtitle">My academic journey and continuous learning in technology.</p>
+                </div>
+
+                <div class="timeline education-timeline" data-reveal>
+                    <div class="timeline-card education-card">
+                        <div class="timeline-dot education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 11v5c3.7 2.8 8.3 2.8 12 0v-5M21.5 9v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                        <div class="timeline-content">
+                            <h3>Virtual University</h3>
+                            <p class="timeline-year">2026 &ndash; Present</p>
+                            <p class="education-program">BS Computer Science</p>
+                            <p>Currently pursuing my studies while continuing to develop my skills in web development and technology.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-card education-card">
+                        <div class="timeline-dot education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 11v5c3.7 2.8 8.3 2.8 12 0v-5M21.5 9v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                        <div class="timeline-content">
+                            <h3>Intermediate in Computer Science</h3>
+                            <p class="timeline-school">Degree College for Women</p>
+                            <p class="timeline-year">2023 &ndash; 2025</p>
+                            <p>Built a foundation in computer science, technology, and problem-solving.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-card education-card">
+                        <div class="timeline-dot education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 11v5c3.7 2.8 8.3 2.8 12 0v-5M21.5 9v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                        <div class="timeline-content">
+                            <h3>Diploma in Information Technology</h3>
+                            <p class="timeline-school">Aptech Institute</p>
+                            <p class="timeline-year">2025</p>
+                            <p>Developed practical knowledge of information technology and digital tools.</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="project-card">
-                    <div class="project-image3"></div>
-                    <div class="project-content">
-                        <h3>Mini Project</h3>
-                        <p>A mini web project demonstrating basic development skills, including interactive elements .</p>
-                       
-                        <div class="project-links">
-                            <a href="https://bushratouheed280-hub.github.io/miniproject/" class="project-link">Live Demo</a>
-                            <a href="https://github.com/bushratouheed280-hub/miniproject.git" class="project-link">Source Code</a>
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">SKILLS</p>
+                    <h2>Tools I use to build modern web experiences.</h2>
+                    <p class="skills-intro">From responsive interfaces to WordPress websites, I work with modern tools and technologies to turn ideas into polished digital experiences.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skills-category" data-reveal>
+                        <div class="skills-category-heading">
+                            <span class="skills-category-number" aria-hidden="true">01</span>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <ul class="skills-badges">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </article>
+                    <article class="skills-category" data-reveal>
+                        <div class="skills-category-heading">
+                            <span class="skills-category-number" aria-hidden="true">02</span>
+                            <h3>WordPress &amp; UI</h3>
+                        </div>
+                        <ul class="skills-badges">
+                            <li>WordPress</li>
+                            <li>Elementor</li>
+                            <li>Custom CSS</li>
+                            <li>UI Implementation</li>
+                        </ul>
+                    </article>
+                    <article class="skills-category" data-reveal>
+                        <div class="skills-category-heading">
+                            <span class="skills-category-number" aria-hidden="true">03</span>
+                            <h3>Development Workflow</h3>
+                        </div>
+                        <ul class="skills-badges">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Browser DevTools</li>
+                            <li>VS Code</li>
+                            <li>AI-Assisted Development</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Projects</p>
+                    <h2>Featured Projects</h2>
+                    <p class="projects-subtitle">A selection of frontend and full-stack projects, with a preview, a short summary, and the technologies used for each one.</p>
+                </div>
+                <!-- To edit a card, update its image, title, summary, technologies, and links here. -->
+                <div class="projects-grid">
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <a href="image/Simplon's Beauty Care ss.png" target="_blank" rel="noreferrer" aria-label="Open Simplon Beauty Care screenshot">
+                                <img class="project-preview-image" src="image/Simplon's Beauty Care ss.png" alt="Preview of the Simplon Beauty Care website" loading="lazy" decoding="async">
+                            </a>
+                            <span class="project-badge">Beauty &amp; Care</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Simplon Beauty Care</h3>
+                            <p>A beauty-care storefront concept with product search, clear navigation, and a featured collection.</p>
+                            <p class="project-tech-label">Technologies used</p>
+                            <ul class="tech-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                            <div class="project-actions">
+                                <a class="project-link-secondary" href="https://bushratouheed280-hub.github.io/Beauty-care/" target="_blank" rel="noreferrer">Preview</a>
+                                <a class="project-link-primary" href="https://github.com/bushratouheed280-hub/Beauty-care" target="_blank" rel="noreferrer">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <a href="image/Coffee website ss.png" target="_blank" rel="noreferrer" aria-label="Open Coffee Shop Website screenshot">
+                                <img class="project-preview-image" src="image/Coffee website ss.png" alt="Preview of the coffee shop website" loading="lazy" decoding="async">
+                            </a>
+                            <span class="project-badge">Coffee Shop</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Coffee Shop Website</h3>
+                            <p>A warm coffee-shop landing page featuring drinks, customer highlights, and prominent order buttons.</p>
+                            <p class="project-tech-label">Technologies used</p>
+                            <ul class="tech-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                            <div class="project-actions">
+                                <a class="project-link-secondary" href="https://bushratouheed280-hub.github.io/COFee/" target="_blank" rel="noreferrer">Preview</a>
+                                <a class="project-link-primary" href="https://github.com/bushratouheed280-hub/COFee" target="_blank" rel="noreferrer">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <a href="image/Food Website ss.png" target="_blank" rel="noreferrer" aria-label="Open Food Website screenshot">
+                                <img class="project-preview-image" src="image/Food Website ss.png" alt="Preview of the restaurant website" loading="lazy" decoding="async">
+                            </a>
+                            <span class="project-badge">Restaurant</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Food Website</h3>
+                            <p>A restaurant landing page showcasing its menu, featured burgers, and delivery highlights.</p>
+                            <p class="project-tech-label">Technologies used</p>
+                            <ul class="tech-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                            <div class="project-actions">
+                                <a class="project-link-primary" href="https://github.com/bushratouheed280-hub/Food" target="_blank" rel="noreferrer">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <a href="image/Care Group ss.png" target="_blank" rel="noreferrer" aria-label="Open Care Group website screenshot">
+                                <img class="project-preview-image" src="image/Care Group ss.png" alt="Preview of the Care Group healthcare website" loading="lazy" decoding="async">
+                            </a>
+                            <span class="project-badge">Healthcare Platform</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Care Group</h3>
+                            <p>A full-stack healthcare platform for finding doctors and booking appointments, with patient and admin features.</p>
+                            <p class="project-tech-label">Technologies used</p>
+                            <ul class="tech-list"><li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li><li>Bootstrap</li><li>JavaScript</li></ul>
+                            <div class="project-actions">
+                                <a class="project-link-primary" href="https://github.com/bushratouheed280-hub/Care-Group" target="_blank" rel="noreferrer">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <a href="image/Elan Jewellery ss.png" target="_blank" rel="noreferrer" aria-label="Open Elan Jewellery website screenshot">
+                                <img class="project-preview-image" src="image/Elan Jewellery ss.png" alt="Preview of the Elan Jewellery storefront website" loading="lazy" decoding="async">
+                            </a>
+                            <span class="project-badge">Jewellery Storefront</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Elan Jewellery</h3>
+                            <p>An elegant jewellery storefront concept showcasing featured pieces and collections in a warm, refined style.</p>
+                            <p class="project-tech-label">Technologies used</p>
+                            <ul class="tech-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React.js</li><li>Vite</li></ul>
+                            <div class="project-actions">
+                                <a class="project-link-secondary" href="https://bushratouheed280-hub.github.io/ELAN-Jewellery/" target="_blank" rel="noreferrer" aria-label="Open Elan Jewellery live preview">Preview</a>
+                                <a class="project-link-primary" href="#" aria-label="Add Elan Jewellery source code URL">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">CONTACT</p>
+                    <h2>Let's build something together.</h2>
+                    <p class="contact-subtitle">Have a project idea, collaboration opportunity, or just want to connect? Feel free to reach out.</p>
+                </div>
+
+                <div class="contact-grid" data-reveal>
+                    <div class="contact-card contact-details">
+                        <div class="contact-intro">
+                            <p class="eyebrow">LET'S TALK</p>
+                            <h3>Let's Talk</h3>
+                            <p>I'm always open to discussing frontend development, website projects, and new opportunities.</p>
+                        </div>
+                        <div class="contact-methods" aria-label="Contact details">
+                            <a href="mailto:bushratouheed280@gmail.com" class="contact-pill">
+                                <span aria-hidden="true">@</span>
+                                <span class="contact-method-text"><small>Email</small><strong>bushratouheed280@gmail.com</strong></span>
+                            </a>
+                            <a href="tel:03083366083" class="contact-pill">
+                                <span aria-hidden="true">+</span>
+                                <span class="contact-method-text"><small>Phone</small><strong>03083366083</strong></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/bushra-touheed" target="_blank" rel="noreferrer" class="contact-pill">
+                                <span aria-hidden="true">in</span>
+                                <span class="contact-method-text"><small>LinkedIn</small><strong>View profile</strong></span>
+                            </a>
+                            <a href="https://github.com/bushratouheed280-hub" target="_blank" rel="noreferrer" class="contact-pill">
+                                <span aria-hidden="true">GH</span>
+                                <span class="contact-method-text"><small>GitHub</small><strong>View profile</strong></span>
+                            </a>
                         </div>
                     </div>
+
+                    <form class="contact-card contact-form" id="contactForm" novalidate>
+                        <!-- Connect a real form service or backend here before enabling message delivery. -->
+                        <div class="field-group"><input id="name" name="name" type="text" autocomplete="name" placeholder=" " required><label for="name">Full Name</label></div>
+                        <div class="field-group"><input id="email" name="email" type="email" autocomplete="email" placeholder=" " required><label for="email">Email Address</label></div>
+                        <div class="field-group"><textarea id="message" name="message" rows="5" placeholder=" " required></textarea><label for="message">Message</label></div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <h3>Phone</h3>
-                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <h3>Location</h3>
-                        <p>City, Country</p>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required id="name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required id="email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" required id="subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required id="message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/bushra-touheed" class="social-link" title="LinkedIn">💼</a>
-                <a href="https://github.com/bushratouheed280-hub" class="social-link" title="GitHub">🐙</a>
-              
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Bushra Touheed. All rights reserved. | Designed & Developed with ❤️</p>
-                <a href="#home" class="back-to-top">Back to Top ↑</a>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">Bushra<span aria-hidden="true">.</span></a>
+                    <p class="footer-description">Frontend Developer focused on building modern, responsive and user-friendly web experiences.</p>
+                    <nav class="socials" aria-label="Social links">
+                        <a href="https://www.linkedin.com/in/bushra-touheed" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">in</a>
+                        <a href="https://github.com/bushratouheed280-hub" target="_blank" rel="noreferrer" aria-label="GitHub profile">GH</a>
+                    </nav>
+                </div>
+                <nav class="footer-navigation" aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Bushra. All rights reserved.</p>
+                <p>Built with HTML, CSS &amp; JavaScript.</p>
             </div>
         </div>
+        <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
